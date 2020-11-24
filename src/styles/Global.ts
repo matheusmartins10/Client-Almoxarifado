@@ -31,7 +31,7 @@ export default createGlobalStyle`
 
   body {
     font-size: 16px;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #252525;
     background: #f4f4f4;
   }

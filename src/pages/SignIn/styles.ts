@@ -28,9 +28,9 @@ export const Login = styled.div`
    h1 {
        text-align: center;
        margin: 30px 0;
-       font-family: 'Times New Roman', Times, serif;
+       font-family: 'Roboto', sans-serif;
        font-weight: bold;
-       font-size: 42px;
+       font-size: 32px;
    }
 
    form {
@@ -46,7 +46,7 @@ export const Login = styled.div`
        }
 
        button {
-          background: #800080;
+          background: #e02041;
           color: #fff;
           font-weight: bold;
           line-height: 38px;
@@ -68,7 +68,7 @@ export const Login = styled.div`
 export const Wallpaper = styled.div`
    width: 100%;
    height: 100vh;
-   background: #800080;
+   background: #e02041;
    color: #fff;
 `;
 export const Img = styled.div`

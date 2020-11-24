@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import React, {FormEvent, useState} from 'react'
 
 import { Link, useHistory } from 'react-router-dom'
@@ -7,7 +8,9 @@ import Image from '../../assets/img.svg'
 
 import api from '../../services/api'
 
+
 const SignUp = () => {
+
 
     const [name, setName] = useState('')
     const [lastname, setLastname] = useState('')
@@ -41,10 +44,10 @@ const SignUp = () => {
           <Login>
               <h1> Criar conta </h1>
               <form onSubmit={handleSubmit} >
-                  <input type="text"  value={name} onChange={(e) => setName(e.target.value)} placeholder="Nome" />
-                  <input type="text"  value={lastname} onChange={(e) => setLastname(e.target.value) } placeholder="Sobrenome" />
-                  <input type="email" value={email} onChange={(e) => setEmail(e.target.value) } placeholder="E-mail" />
-                  <input type="password" value={password} onChange={(e) => setPassword(e.target.value)}  placeholder="Senha" />
+                  <input  required type="text" name="name"   placeholder="Nome" value={name} onChange={(e) => { setName(e.target.value)}} />
+                  <input  required type="text"  value={lastname} onChange={(e) => setLastname(e.target.value) } placeholder="Sobrenome" />
+                  <input  required type="email" value={email} onChange={(e) => setEmail(e.target.value) } placeholder="E-mail" />
+                  <input  required type="password" value={password} onChange={(e) => setPassword(e.target.value)}  placeholder="Senha" />
 
                   <button type="submit" > Cadastrar </button>
               </form>
@@ -56,7 +59,7 @@ const SignUp = () => {
                   <img src={Image} alt="image" />
                </Img>
                <T>
-                   Sua plataforma para acessar os seus sistemas
+                 Seja bem-vindo!
                </T>
            </Wallpaper>
         </Container>

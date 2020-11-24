@@ -1,9 +1,11 @@
 import React, {useState, useContext, FormEvent} from 'react'
 
+import { store } from 'react-notifications-component'
+
 import { Link } from 'react-router-dom'
 
 import { Container, Sign, Logo, Login, Wallpaper, Img, T } from './styles'
-import Image from '../../assets/img.svg'
+import Image from '../../assets/img2.svg'
 
 import AuthContext from '../../contexts/auth'
 
@@ -17,14 +19,15 @@ const SignIn = () => {
     async function handleSubmit(e: FormEvent){
         e.preventDefault()
 
-        signIn({
-            email,
-            password,
-        }).catch(e => {
-            alert('E-mail ou senha inválido!')
-        })
-
-    }
+        
+         signIn({
+                email,
+                password,
+         }).catch(e => {
+             alert('E-mail ou senha estão incorretas!')
+         })
+           
+        }
 
     return (
         <Container>
@@ -47,7 +50,7 @@ const SignIn = () => {
                   <img src={Image} alt="image" />
                </Img>
                <T>
-                   Sua plataforma para acessar os seus sistemas
+                   Seu portal para acessar os seus sistemas
                </T>
            </Wallpaper>
         </Container>
