@@ -4,7 +4,7 @@ import { store } from 'react-notifications-component'
 
 import { Link } from 'react-router-dom'
 
-import { Container, Sign, Logo, Login, Wallpaper, Img, T } from './styles'
+import { Container, Sign, Logo, Login } from './styles'
 import Image from '../../assets/img2.svg'
 
 import AuthContext from '../../contexts/auth'
@@ -45,14 +45,6 @@ const SignIn = () => {
               <Link to="signup" > Primeiro acesso ? </Link>
           </Login>  
            </Sign>
-           <Wallpaper>
-               <Img>
-                  <img src={Image} alt="image" />
-               </Img>
-               <T>
-                   Seu portal para acessar os seus sistemas
-               </T>
-           </Wallpaper>
         </Container>
     )
 }

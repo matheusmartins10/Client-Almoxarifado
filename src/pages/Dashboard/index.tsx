@@ -8,7 +8,7 @@ const DashBoard = () => {
     return (
         <>
          <Header />
-         <h1 style={{textAlign:"center", marginTop: 60}} > Portal  </h1>
+         <h1 style={{textAlign:"center", marginTop: 60}} > Portal de Acesso  </h1>
         </>
     )
 }

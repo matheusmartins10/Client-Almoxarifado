@@ -3,7 +3,7 @@ import React, {FormEvent, useState} from 'react'
 
 import { Link, useHistory } from 'react-router-dom'
 
-import { Container, Sign, Logo, Login, Wallpaper, Img, T } from './styles'
+import { Container, Sign, Logo, Login} from './styles'
 import Image from '../../assets/img.svg'
 
 import api from '../../services/api'
@@ -54,14 +54,6 @@ const SignUp = () => {
               <Link to="/" > Voltar </Link>
           </Login>  
            </Sign>
-           <Wallpaper>
-               <Img>
-                  <img src={Image} alt="image" />
-               </Img>
-               <T>
-                 Seja bem-vindo!
-               </T>
-           </Wallpaper>
         </Container>
     )
 }
